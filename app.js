@@ -11,7 +11,7 @@ const querystring = require('querystring');
 const unirest = require("unirest");
 const fileName = 'themoviedb_data.json'
 const jsonDataFile = require('./public/themoviedb_data.json')
-
+const process.env.PWD = process.cwd()
 
 // Controllers(route handlers)
 const homeController = require('./controllers/home');
@@ -46,22 +46,22 @@ function getMovieResults(){
 // Express Configuration
 
 app.set('port', process.env.PORT || 3001)
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(process.env.PWD , 'views'));
 app.set('view engine', 'ejs');
 app.use(compression());
 app.use(sass({
-  src: path.join(__dirname, 'public'),
-  dest: path.join(__dirname, 'public')
+  src: path.join(process.env.PWD , 'public'),
+  dest: path.join(process.env.PWD , 'public')
 }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, '/public'), { maxAge: 31557600000 }));
+app.use(express.static(path.join(process.env.PWD , '/public'), { maxAge: 31557600000 }));
 
 
 // Primary App Routes
 app.get('/', function(req, res){
   console.log(getMovieResults());
-  res.render('home')
+
   var titleArr = [];
   var descriptionArr = []
   var jsonData =jsonDataFile.results
