@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Quiz Web Application</title>
+    <link href="https://fonts.googleapis.com/css?family=Scope+One|Shrikhand" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+  </head>
+  <body>
+
+    <div class="grid">
+      <div class="quiz" id="quiz">
+        <h1><img id="icon" src="movieicon.svg" alt="">   Guess That Movie!    <img id="icon" src="movieicon.svg" alt=""></h1>
+        <center>
+        <ol>
+          Directions: Choose a Category and Read the movie's overview, then guess which movie it is.</p>
+        </ol>
+
+
+          <select name="" id="mydropdown1">
+              <option value="choose-one" selected disabled>Choose a Category:</option>
+              <option value="now_playing">Movies Now Playing</option>
+              <option value="top_rated">Top Rated Movies</option>
+              <option value="upcoming">Latest</option>
+          </select>
+
+        <button type="button" id="submit-btn" class="sm_btn" name="button">Submit</button>
+        <hr>
+
+        <p id="question"></p>
+
+
+        <div class="buttons">
+
+            <button type="button" name="button" id="btn0"><p id="image0"></p><span id="choice0"></span></button>
+            <button type="button" name="button" id="btn1"><p id="image1"></p><span id="choice1"></span></button>
+            <button type="button" name="button" id="btn2"><p id="image2"></p><span id="choice2"></span></button>
+            <button type="button" name="button" id="btn3"><p id="image3"></p><span id="choice3"></span></button>
+      </div>
+
+        <hr style="margin-top: 50px">
+
+
+      </div>
+      <footer>
+        <center>
+        <p id="progress">Question x of y.</p>
+        <p id="result"></p>
+      </footer>
+
+
+      <p id= "movieData"></p>
+    </div>
+
+
+    <script src="js/question.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+
+</html>

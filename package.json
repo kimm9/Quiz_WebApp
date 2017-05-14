@@ -1,0 +1,41 @@
+{
+  "name": "webapp-quiz",
+  "version": "1.0.0",
+  "description": "Quiz Web Application",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "chalk": "^1.1.3",
+    "compression": "^1.6.2",
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "jsonfile": "^3.0.0",
+    "node-sass-middleware": "^0.11.0",
+    "path": "^0.12.7",
+    "unirest": "^0.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimm9/Webapp-Quiz.git"
+  },
+  "keywords": [
+    "Quiz",
+    "Brad",
+    "Pitt",
+    "Movies"
+  ],
+  "author": "Matthew Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimm9/Webapp-Quiz/issues"
+  },
+  "homepage": "https://github.com/kimm9/Webapp-Quiz#readme"
+}
