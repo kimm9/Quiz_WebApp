@@ -61,6 +61,7 @@ app.use(express.static(path.join(__dirname, '/public'), { maxAge: 31557600000 })
 // Primary App Routes
 app.get('/', function(req, res){
   console.log(getMovieResults());
+  res.render('home')
   var titleArr = [];
   var descriptionArr = []
   var jsonData =jsonDataFile.results
@@ -77,6 +78,7 @@ app.get('/', function(req, res){
 app.listen(app.get('port'), () => {
   console.log('Your app is running at http://localhost:3001 in development mode', chalk.green('✓'), app.get('port'), app.get('env'));
   console.log('To quit Ctrl-C');
+
   var titleArr = [];
   var descriptionArr = [];
   var jsonData =jsonDataFile.results
