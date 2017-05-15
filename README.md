@@ -1,7 +1,8 @@
 # Guess That Movie!- APP OVERVIEW 
 
 I have created an web application that uses The Movie Database API to create a quiz according to user's decision on category
-URL: https://movie-quiz-webapp.herokuapp.com/
+
+- URL: https://movie-quiz-webapp.herokuapp.com/
 
 ## Instructions
 
@@ -11,11 +12,11 @@ URL: https://movie-quiz-webapp.herokuapp.com/
 
 ## Built With
 
--Front-end Technology: HTML, CSS, JS
+- Front-end Technology: HTML, CSS, JS
 
--Back-end Technolgy: Node.js
+- Back-end Technolgy: Node.js
 
--API: The Movie Database 
+- API: The Movie Database 
 
 
 ##Questions of Feedback?
