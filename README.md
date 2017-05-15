@@ -1,6 +1,7 @@
 # APP OVERVIEW - Guess That Movie!
 
-I have created an web application that uses The Movie Database API to create a quiz according to user's decision
+I have created an web application that uses The Movie Database API to create a quiz according to user's decision on category
+
 ## Instructions
 
 1. Choose a Category
